@@ -112,7 +112,7 @@ if gpu:
 dataset = MNIST(
     PoissonEncoder(time=time, dt=dt),
     None,
-    "../../data/MNIST",
+    root=os.path.join(ROOT_DIR, "data", "MNIST"),
     download=True,
     transform=transforms.Compose(
         [transforms.ToTensor(), transforms.Lambda(lambda x: x * intensity)]
