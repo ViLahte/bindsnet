@@ -19,7 +19,7 @@ Two layers with lateral inhibition, unsupervised STDP.
 |--plot|False| graphically monitors voltages, spikes, output neurons assignments and confusion matrix
 |--time|100|duration (in ms) of each sample presentation
 |--dt|1| SNN simulation time increment (ms)
-|--update_step|256|number of samples trained between each accuracy estimation
+|--update_interval|256|number of samples trained between each accuracy estimation
 |--seed|0|initial random seed
 |--n_workers|-1|dataset spikes conversion CPU/GPU threads (-1 for auto)
 |--batch_size|32|only for batch_eth_mnist.py: length of each training batch
