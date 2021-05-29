@@ -28,7 +28,7 @@ class Monitor(AbstractMonitor):
         state_vars: Iterable[str],
         time: Optional[int] = None,
         batch_size: int = 1,
-        device: str = "cpu",
+        device: Union[str,torch.device] = "cpu",
     ):
         # language=rst
         """
