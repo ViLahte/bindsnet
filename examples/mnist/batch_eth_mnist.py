@@ -332,7 +332,7 @@ print("Training complete.\n")
 
 # Create a DataLoader to iterate and batch data.
 test_dataloader = DataLoader(
-    train_dataset,
+    test_dataset,
     batch_size=batch_size,
     shuffle=True,
     num_workers=n_workers,
