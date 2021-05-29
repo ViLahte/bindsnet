@@ -324,7 +324,7 @@ for epoch in range(n_epochs):
 
         network.reset_state_variables()  # Reset state variables.
         pbar_training.update(batch_size)
-
+    pbar_training.close()
 print("\nProgress: %d / %d (%.4f seconds)" % (epoch + 1, n_epochs, t() - start))
 print("Training complete.\n")
 
@@ -427,5 +427,5 @@ for i, batch in enumerate(test_dataloader):
 
     network.reset_state_variables()  # Reset state variables.
     pbar_testing.update(batch_size)
-
+pbar_testing.close()
 print("\nTesting complete (%.4f seconds).\n" % (t() - start))
